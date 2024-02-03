@@ -1,0 +1,59 @@
+body {
+    margin-left: 20px;
+    background-color: cadetblue;
+}
+
+h2 {
+    text-align: center;
+}
+
+.btn {
+    margin-left: 45%;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 16px;
+    /* border: none; */
+    color: white;
+    background-color:darkgreen;
+}
+
+.editBtn {
+    height: 2rem;
+    width: 5rem;
+    margin-left: 12rem;
+    margin-bottom: 0.75rem;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 16px;
+}
+
+.card {
+    transition: 0.3s;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 4px 8px black;
+    margin: 30px 0 0 65px;
+    display: inline-block;
+  }
+
+  .desc{
+    padding: 0 2px 0 2px;
+}
+
+.card:hover{
+    box-shadow: 6px 10px 20px black;
+}
+
+.chat {
+    background-color: rgb(191, 209, 224);
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.msg {
+    background-color: rgb(9, 110, 77);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 16px;
+}

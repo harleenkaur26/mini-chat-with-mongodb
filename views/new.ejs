@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write new chat</title>
+    <style>
+        body{
+            background-color: cadetblue;
+            text-align: center;
+            margin-top: 5rem;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 16px;
+            /* border: none; */
+            color: white;
+            background-color:darkgreen;
+        }
+
+        .rad {
+            border-radius: 16px;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Write a new chat..</h2>
+    <form method="post" action="/chats">
+        Who are you : <input class="rad" placeholder="Enter your name" name="from"> <br> <br> <br>
+        Write your message here : <br><textarea class="rad"  name="msg" placeholder="Type your message here" id="" cols="30" rows="10"></textarea> <br> <br> <br>
+        Write receiver's name : <input class="rad"  placeholder="Receiver's name" name="to"> <br> <br> <br>
+        <button class="btn">Submit</button>
+        
+    </form>
+</body>
+</html>
