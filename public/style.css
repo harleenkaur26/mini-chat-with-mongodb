@@ -17,13 +17,27 @@ h2 {
     background-color:darkgreen;
 }
 
+.mainBtn {
+    display: flex;
+}
+
 .editBtn {
     height: 2rem;
     width: 5rem;
-    margin-left: 12rem;
-    margin-bottom: 0.75rem;
+    
+    margin-bottom: 0.25rem;
     text-decoration: none;
     padding: 0.5rem;
+    border-radius: 16px;
+}
+
+.deleteBtn {
+    height: 2rem;
+    width: 5rem;
+    margin-left: 7rem;
+    text-decoration: none;
+    background-color: firebrick;
+    color: white;
     border-radius: 16px;
 }
 

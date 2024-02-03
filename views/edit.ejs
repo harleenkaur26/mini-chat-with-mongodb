@@ -4,14 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit chat</title>
+    <style>
+        body{
+            background-color: cadetblue;
+            text-align: center;
+            margin-top: 5rem;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 10px;
+            /* border: none; */
+            color: white;
+            width: 5rem;
+            background-color:darkgreen;
+        }
+
+        .rad {
+            border-radius: 16px;
+        }
+
+    </style>
 </head>
 <body>
     <h2>Edit your chat for id: <%= chat._id %> </h2>
-    <p>This chat was sent from <b> <%= chat.from %> </b>  to <b> <%= chat.to %> </b> </p>
+    <h2>This chat was sent from <i> <u> <%= chat.from %> </u> </i>  to <i> <u> <%= chat.to %> </u>  </i> </h2>
 
-    <form action="">
-        <textarea name="msg" id="" cols="30" rows="10"> <%= chat.msg %> </textarea> <br> <br>
-        <button>Edit</button>
+    <form method="POST" action="/chats/<%= chat._id %>?_method=PUT">
+        <textarea class="rad" name="msg" id="" cols="30" rows="10"> <%= chat.msg %> </textarea> <br> <br>
+        <button class="btn">Edit</button>
     </form>
 
 </body>
